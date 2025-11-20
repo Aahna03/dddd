@@ -1,0 +1,11 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+Stack Basics,Implement Stack using Array,Use list with push/pop operations,Simple O(1) amortized operations
+Stack Basics,Implement Stack using Linked List,Use LL nodes & maintain top pointer,Linked list stack with O(1) operations
+Stack Basics,Valid Parentheses,Use stack to push opening brackets & match,Stack + mapping + immediate validation
+Intermediate Stack Problems,Next Greater Element,Use nested loops for brute force NGE,Monotonic decreasing stack
+Intermediate Stack Problems,Min Stack,Use extra array to track minimum,Keep track of current min with auxiliary stack
+Intermediate Stack Problems,Balanced Expression Evaluation,Check brackets manually without stack (complex),Stack-based evaluation & precedence handling
+Advanced Stack Patterns,Reverse a Stack using Recursion,Pop elements into another stack temporarily,Recursive helper using call stack
+Advanced Stack Patterns,Sort a Stack using Recursion,Use auxiliary stack for sorting,Recursion + in-place operations
+Advanced Stack Patterns,Asteroid Collision,Simulate collisions with multiple passes,Monotonic stack for O(n)
+Advanced Stack Patterns,Daily Temperatures (Monotonic Stack),Brute force comparing temperatures ahead,Monotonic decreasing stack for O(n)

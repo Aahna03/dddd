@@ -1,0 +1,11 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+Backtracking Basics,Subset Generation,Choose/Not choose each element brute force,Backtracking template + include/exclude pruning
+Backtracking Basics,Permutation Generation,Swap-based permutations,Used array + backtracking depth
+Backtracking Basics,Combination Sum I,Try all combinations without pruning,Sort + prune when sum exceeds target
+Intermediate Backtracking,Combination Sum II,Try all combinations but duplicates cause repetition,Sort + skip duplicates + prune branches
+Intermediate Backtracking,Letter Combinations of Phone Number,Try each possible char for each digit,DFS with backtracking + mapping dictionary
+Intermediate Backtracking,Sudoku Solver,Fill cells left-to-right without constraints check early,Backtracking + validity check + early pruning
+Advanced Backtracking,N-Queens Problem,Place queens row-wise without safety check optimization,Backtracking + column/diag arrays for O(1) safety checks
+Advanced Backtracking,Rat in a Maze (Optimized),Move in all 4 directions without visited tracking,Backtracking + visited matrix
+Advanced Backtracking,Word Search,DFS brute force without trimming dead paths early,Backtracking + early stop when path impossible
+Advanced Backtracking,Palindrome Partitioning,Try all partitions blindly,Backtracking + DP memoization possible

@@ -1,0 +1,15 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+1. Basics,"Count vowels, consonants, digits, and spaces in a string",Iterate through each character and count categories,Use regex or built-in methods efficiently
+1. Basics,Convert string to uppercase / lowercase / toggle case,Use loops and ASCII checks for manual conversion,"Built-in `.upper()`, `.lower()` methods"
+1. Basics,Find length of string without using built-in functions,Traverse until null character or end index,Use built-in `len()` or `.length()` function
+2. Traversal & Character Operations,Print all characters with their ASCII values,Loop through string and print char with ord() value,Use list comprehension + ord() or map()
+2. Traversal & Character Operations,Remove whitespaces or special characters from string,Use loop or regex to filter valid characters,Regex filtering or `str.replace()` chains
+3. Palindrome & Reversal,Check if string is palindrome,Reverse & compare strings,Two Pointers approach
+3. Palindrome & Reversal,Reverse words in a sentence,Split string into words and reverse list,Two Pointers + Stack-based reversal
+4. Frequency & Anagram Problems,Check if two strings are anagrams,Sort both strings and compare,HashMap / Frequency array (O(n))
+4. Frequency & Anagram Problems,Find first non-repeating character,Use frequency array or dict to count occurrences,HashMap + linear traversal
+5. Substrings & Subsequence,Find all substrings of a string,Use nested loops to extract all substrings,Sliding Window or Dynamic Programming (for subsequences)
+5. Substrings & Subsequence,Longest common prefix among strings,Compare prefixes one by one,Trie-based prefix matching (if multiple strings)
+6. Pattern Searching,Naive pattern searching,Loop through text and check each substring,KMP algorithm (O(n+m))
+6. Pattern Searching,KMP / Rabin-Karp string matching,Precompute longest prefix array (LPS) or hash window,Rolling hash / KMP optimized search
+7. Advanced Patterns,Longest substring without repeating characters,Use sliding window with hashset,Sliding window + HashMap (O(n))

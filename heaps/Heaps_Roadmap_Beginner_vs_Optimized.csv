@@ -1,0 +1,11 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+Heap Basics,What is a Heap (Min/Max Heap),Understand tree structure & properties,Min-heap = smallest root; max-heap = largest root
+Heap Basics,Heap Representation (Array Based),Store heap as array but think in tree form,"Use array index math: left=2i+1, right=2i+2"
+Heap Basics,Build Heap,Insert one-by-one (O(n log n)),Heapify method → build in O(n)
+Heap Operations,Insert into Heap,Append & bubble-up manually,Push & bubble-up in O(log n)
+Heap Operations,Delete from Heap / Extract Min-Max,Brute remove & rebuild heap,Heapify-down after removing root
+Intermediate Heap Problems,K Largest / K Smallest Elements,Sort array then pick first K,Use heapq / priority queue in O(n log k)
+Intermediate Heap Problems,Heap Sort,Sort array and display,Heap sort using repeated extraction
+Advanced Heap Problems,Merge K Sorted Lists,Merge lists using brute nested loops,Min-heap for k-way merge
+Advanced Heap Problems,Top K Frequent Elements,Use hashmap & sort by frequency,Min/Max heap + hashmap
+Advanced Heap Problems,Find Median from Data Stream,Store entire stream and sort for each median,Two heaps (min-heap + max-heap) → O(log n) median

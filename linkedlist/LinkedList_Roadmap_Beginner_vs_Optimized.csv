@@ -1,0 +1,11 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+Linked List Basics,Create & Traverse a Linked List,Simple node creation & pointer traversal,Pointer iteration (O(n))
+Linked List Basics,Insert at Head / Tail,Manually adjust pointers for head/tail,Constant-time insert using pointer manipulations
+Linked List Basics,Delete a Node,Traverse & find previous to delete,Two-pointer approach for deletions
+Linked List Operations,Reverse a Linked List,Use extra array to store values then rebuild,"In-place reversal using 3 pointers (prev, curr, next)"
+Linked List Operations,Find Middle of Linked List,Count length then move mid positions,Fast & slow pointer (Tortoise-Hare)
+Intermediate Linked Lists,Detect Cycle (Floyd’s Algorithm),Use HashSet to track visited nodes,Floyd’s cycle detection (O(1) space)
+Intermediate Linked Lists,Remove Cycle,Break loop by scanning again,Finding cycle start using Floyd’s algorithm
+Advanced Linked Lists,Merge Two Sorted Lists,Merge arrays then rebuild list,Two-pointer merge technique
+Advanced Linked Lists,Intersection of Two Linked Lists,Compare lists using nested loops,Length difference + pointer walk
+Advanced Linked Lists,Duplicate Removal in Sorted LL,Loop and remove duplicates manually,One-pass duplicate removal (O(n))

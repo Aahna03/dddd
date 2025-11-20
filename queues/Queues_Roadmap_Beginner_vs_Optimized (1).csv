@@ -1,0 +1,11 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+Queue Basics,Implement Queue using Array,Use array & shift elements on dequeue (O(n)),Use circular index for O(1) ops
+Queue Basics,Implement Queue using Linked List,Use LL nodes for enqueue/dequeue,Linked list queue with O(1) ops
+Queue Basics,Implement Circular Queue,Track front & rear manually,Modulo arithmetic for efficient wrap-around
+Intermediate Queues,Queue using Two Stacks,Push all elements from one stack to another repeatedly,Amortized O(1) queue using two stacks
+Intermediate Queues,Stack using Two Queues,Use expensive enqueue/dequeue without optimization,Use push-pop balancing to get O(1) amortized
+Intermediate Queues,Generate Binary Numbers using Queue,Generate binary numbers using brute force,Use queue to simulate binary expansion
+Advanced Queue Patterns,Sliding Window Maximum (Deque),Use nested loops to find max,Deque (Monotonic Queue) → O(n)
+Advanced Queue Patterns,Rotten Oranges (BFS),Simulate spreading without BFS,Multi-source BFS
+Advanced Queue Patterns,First Non-Repeating Character in Stream,Use hashmap & re-check entire stream each time,Queue + frequency + stream processing
+Advanced Queue Patterns,LRU Cache Concept,Store all states & search linearly,Use LinkedHashMap / deque for O(1) operations

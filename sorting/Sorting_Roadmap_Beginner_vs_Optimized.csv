@@ -1,0 +1,11 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+Basic Sorting,Bubble Sort,Compare adjacent elements & swap,Recognize it’s O(n²) & avoid for large input
+Basic Sorting,Selection Sort,Find minimum & put at right place,Use selection when swaps must be minimized
+Basic Sorting,Insertion Sort,Shift elements and insert in sorted position,Use insertion for nearly sorted arrays
+Intermediate Sorting,Sorting Stability Concept,Test sorting with duplicate elements,Learn which algorithms preserve stability
+Intermediate Sorting,Sorting in Descending / Custom Order,Modify comparator / reverse loops,Comparator functions / lambda sorting
+Divide & Conquer Sorting,Merge Sort,Split → sort → merge,O(n log n) efficient stable sort
+Divide & Conquer Sorting,Quick Sort,Partition around pivot,Randomized pivot → average O(n log n)
+Optimized Patterns,Counting Sort,Count occurrences & rebuild array,O(n) for small integer ranges
+Optimized Patterns,Bucket / Radix Sort,Distribute into buckets; sort individually,Great for floating values / large numbers
+Advanced Sorting,Sort Colors / Dutch National Flag,Brute force multiple passes,Three-pointer partitioning (O(n))

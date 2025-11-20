@@ -1,0 +1,11 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+Tree Basics,Create & Represent a Binary Tree,Use manual node creation & pointers,Use classes/structs & BFS/DFS traversal
+Tree Basics,Height / Depth of a Tree,Recursive depth calculation,DFS recursion to compute height efficiently
+Tree Basics,Count Nodes / Leaf Nodes,Traverse all nodes and count,One traversal with counters
+Tree Traversals,Inorder / Preorder / Postorder Traversal,Use recursive functions,Iterative stack-based traversals
+Tree Traversals,Level Order Traversal (BFS),Use queue & process level by level,Queue-based BFS (O(n))
+Intermediate Trees,Diameter of Binary Tree,Brute force: compute height for every node,Height & diameter in one DFS (O(n))
+Intermediate Trees,Check if Tree is Balanced,Compute height at every node → O(n²),Check height + balance in one DFS
+Intermediate Trees,Right / Left View of Binary Tree,Use map with levels or nested loops,Store first/last nodes per level (O(n))
+Advanced Trees,Lowest Common Ancestor (LCA),Find paths & compare them,Binary lifting or single DFS LCA
+Advanced Trees,Boundary Traversal,Use separate loops for boundaries,Smart boundary traversal using DFS + conditions

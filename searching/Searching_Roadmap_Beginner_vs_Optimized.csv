@@ -1,0 +1,11 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+Searching Basics,Linear Search,Check each element one by one,Direct O(n) scan
+Searching Basics,Why Searching Needs Sorted Arrays,Try binary search & see failure on unsorted,Sort array or use hashing when allowed
+Binary Search Core,Basic Binary Search (Find element),"Use low, high, mid and compare",Binary Search (O(log n))
+Binary Search Core,Order-Agnostic Binary Search,Try both ascending and descending by checking order,Detect sort order ? apply binary search
+Binary Search Variants,First and Last Occurrence,Linear scan to find all positions,Lower bound / Upper bound using binary search
+Binary Search Variants,Find Number of Occurrences,Loop and count repeated elements,Binary search boundaries
+Binary Search Variants,Peak Element (Mountain Array),Scan to find peak via brute force,Binary search for peak (unimodal property)
+Binary Search on Answer,Minimum Capacity / Threshold Problems,Try all capacities to check feasibility,Binary Search on Answer + feasibility function
+Binary Search on Answer,Koko Eating Bananas / Painters Partition,Brute force simulate all speeds/partitions,Binary Search on Answer + monotonic check
+Advanced Searching,Search in Rotated Sorted Array,Linear search or naive split,Binary Search with pivot detection

@@ -1,0 +1,43 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+1. Traversal & Basics,Input and Print an Array,Brute Force,-
+1. Traversal & Basics,Find Maximum and Minimum Element,Brute Force,-
+1. Traversal & Basics,Calculate Sum and Average of Array Elements,Brute Force,-
+1. Traversal & Basics,Count Occurrences of an Element,Brute Force,-
+1. Traversal & Basics,Check if Array is Palindrome,Reverse & Compare,Two Pointers
+2. Searching,Linear Search (unsorted),Brute Force,-
+2. Searching,Binary Search (sorted),Binary Search,-
+2. Searching,First and Last Occurrence,Linear,Binary Search variation
+3. Reversal,Reverse an Array,Brute Force,Two Pointers Swap
+3. Reversal,Reverse a Subarray,-,Two Pointers Variation
+4. Rotation & Shifting,Rotate Array by One Step,Shift Loop,Reversal Method
+4. Rotation & Shifting,Rotate Array by k Steps,Shift k Times,Modulo + Reversal
+4. Rotation & Shifting,Cyclic Rotation (last element moves to front),Brute Force,-
+5. Sorting & Order,Bubble Sort,Brute Force,-
+5. Sorting & Order,Selection Sort,Brute Force,-
+5. Sorting & Order,Insertion Sort,Brute Force,-
+5. Sorting & Order,Find Second Largest,Brute Force,Single Pass / Heap
+6. Duplicate Handling,Remove Duplicates,Brute Force,HashSet / Two Pointers (if sorted)
+6. Duplicate Handling,Find All Duplicate Elements,Brute Force,HashMap / Frequency Count
+6. Duplicate Handling,Find Frequency of Each Element,Brute Force,HashMap
+7. Subarray & Subsequence,Print All Subarrays,O(n²) Brute Force,-
+7. Subarray & Subsequence,Maximum Subarray Sum,Brute Force,Kadane’s Algorithm
+7. Subarray & Subsequence,Subarray with Given Sum,Brute Force,Prefix Sum / HashMap
+8. Two Pointers Technique,Palindrome Check (Q5 Optimized),-,Two Pointers
+8. Two Pointers Technique,Reverse Array (Q9 Optimized),-,Two Pointers
+8. Two Pointers Technique,Pair with Given Sum (2-sum),Brute Force,Two Pointers / HashMap
+8. Two Pointers Technique,Triplet with Given Sum (3-sum),Brute Force,Sorting + Two Pointers
+8. Two Pointers Technique,Move Zeroes to End,Brute Force,Two Pointers
+8. Two Pointers Technique,Segregate Positive & Negative,Brute Force,Two Pointers Partition
+9. Prefix Sum & Hashing,Subarray Sum = K,Brute Force,Prefix Sum / HashMap
+9. Prefix Sum & Hashing,Longest Subarray with Equal 0s and 1s,-,Prefix Sum + HashMap
+9. Prefix Sum & Hashing,Subarray with 0 Sum,-,Prefix Sum + HashMap
+10. Sliding Window,Maximum Sum Subarray of Size k,Brute Force,Sliding Window
+10. Sliding Window,Smallest Subarray with Sum ≥ K,Brute Force,Sliding Window / Two Pointers
+10. Sliding Window,Longest Subarray with K Distinct Elements,-,Sliding Window + HashMap
+11. Binary Search on Answer,Minimum Element in Rotated Sorted Array,-,Binary Search on Answer
+11. Binary Search on Answer,Search in Rotated Sorted Array,-,Binary Search on Answer
+11. Binary Search on Answer,Median of Two Sorted Arrays,-,Binary Search on Answer
+11. Binary Search on Answer,Allocate Minimum Pages,-,Binary Search on Answer
+12. Matrix as 2D Arrays,Spiral Traversal,Brute Force,-
+12. Matrix as 2D Arrays,Rotate Matrix by 90°,Brute Force,Transpose + Reverse Rows
+12. Matrix as 2D Arrays,Search in a Sorted 2D Matrix,Brute Force,Optimized Search (staircase)

@@ -1,0 +1,11 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+Hashing Basics,What is Hashing,Store key-value pairs manually in array,Constant-time average lookups using hashing
+Hashing Basics,HashMap / HashSet Implementation Concept,Use arrays & search linearly for keys,Use built-in HashMap / HashSet
+Hashing Basics,Handling Collisions,Chaining via lists or open addressing concept,Separate chaining / linear probing / quadratic probing
+Intermediate Hashing,Counting Frequencies of Elements,Count using loops and nested loops,Use HashMap for O(n) counting
+Intermediate Hashing,Find First Non-Repeating Character,Re-check entire string for each character,Use frequency map + queue
+Intermediate Hashing,Check if Two Strings Are Anagrams,Sort both strings and compare,Use HashMap for O(n) comparison
+Advanced Hashing,Subarray Sum Equals K,Brute-force check all subarrays,Prefix-sum + HashMap
+Advanced Hashing,Longest Consecutive Sequence,Sort array then count sequences,Use HashSet for O(n) longest sequence
+Advanced Hashing,Group Anagrams,Sort words and group manually,Hashing with tuple/signature for grouping
+Advanced Hashing,Top K Frequent Elements,Sort array then count frequencies,Heap + HashMap or bucket sort

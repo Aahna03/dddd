@@ -1,0 +1,11 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+Graph Basics,Graph Representation (Adj List / Matrix),Use arrays/lists; manual edge insertion,Use adjacency list for sparse graphs
+Graph Basics,Directed vs Undirected Graph,Interpret edges by intuition,Understand in-degree/out-degree properties
+Graph Basics,Detecting Connected Components,Brute scan all nodes repeatedly,Use BFS/DFS + visited array
+Graph Traversals,BFS Traversal,Use queue but without visited array,Queue-based BFS with visited array (O(V+E))
+Graph Traversals,DFS Traversal,Simple recursion without visited tracking,DFS using recursion + visited (O(V+E))
+Intermediate Graphs,Cycle Detection (Directed & Undirected),Random traversal & check neighbors repeatedly,Use BFS/DFS + parent tracking or recursion stack
+Intermediate Graphs,Topological Sort,Try removing edges/testing cycles manually,Kahn’s Algorithm / DFS order
+Advanced Graphs,Shortest Path (Dijkstra),Try brute-force all paths,Priority queue (min-heap) + adjacency list
+Advanced Graphs,Minimum Spanning Tree (Prim / Kruskal),Sort all edges then try building MST manually,Kruskal (DSU) / Prim (Min Heap)
+Advanced Graphs,Detect Bipartite Graph,Use simple color marking without structure,Two-coloring using BFS/DFS

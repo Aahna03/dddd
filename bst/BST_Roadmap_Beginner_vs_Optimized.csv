@@ -1,0 +1,11 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+BST Basics,Create a Binary Search Tree,Create nodes manually & follow BST rules,Recursive insert + left/right rules
+BST Basics,Search in a BST,Linear search through tree (inefficient),Use BST property → prune search path
+BST Basics,Insert a Node in BST,Traverse entire tree to find insertion point,Insert using recursion/iteration O(h)
+BST Operations,Delete a Node from BST,Try brute deletion by rebuilding tree,"Handle 0,1,2 child cases using BST properties"
+BST Operations,Validate a BST,Inorder traversal & check sorted result,Use min/max range validation (DFS)
+Intermediate BST Problems,Kth Smallest / Largest Element,Store inorder in array and find kth element,Inorder traversal + counter (O(h+k))
+Intermediate BST Problems,Find floor & ceil in BST,Use brute-force traversal to find values,Use BST traversal with pruning
+Advanced BST Problems,Lowest Common Ancestor (BST),Find path to both nodes & compare,Use BST properties → O(h)
+Advanced BST Problems,Recover BST (Fix Two Swapped Nodes),Sort inorder list & rebuild tree,Inorder traversal to detect swapped nodes
+Advanced BST Problems,Convert BST to Balanced BST,Collect nodes inorder & rebuild manually,Build balanced BST using sorted inorder list

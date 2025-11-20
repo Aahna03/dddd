@@ -1,0 +1,11 @@
+Topic,Question,Beginner Approach,Optimized / Pattern-Based Approach
+Recursion Basics,Print numbers 1 to N (simple recursion),Direct increasing/decreasing recursive calls,Tail recursion concept (if language supports)
+Recursion Basics,Factorial / Fibonacci,Use recursion tree understanding,Memoization for Fibonacci
+Recursion Basics,Power (x^n),Multiply n times; naive recursion,Binary exponentiation (fast power)
+Intermediate Recursion,Sum of digits / reverse number using recursion,Break number and process digit by digit,Efficient digit extraction
+Intermediate Recursion,Tower of Hanoi,Follow 3-step disk movement rule,Minimize moves via known recurrence
+Backtracking,Generate all subsets,Brute force include/exclude choices,Backtracking with pruning
+Backtracking,Generate all permutations,Swap characters to generate permutations,Backtracking + used-array optimization
+Backtracking,Rat in a Maze,Try all four directions without pruning,Backtracking + visited matrix
+Advanced Recursion,N-Queens Problem,Place queens row by row without checks,Backtracking + safety checks + pruning
+Advanced Recursion,Palindrome partitioning,Try all partitions,DP + backtracking
