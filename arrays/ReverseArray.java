@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 /**
  * Topic 3 & 8: Reversal + Two Pointers
@@ -12,57 +11,41 @@ import java.util.Scanner;
  */
 public class ReverseArray {
 
-    // Q9: Beginner - reverse using extra array
-    public static int[] reverseWithExtraArray(int[] arr) {
-        // TODO: create new array, copy elements from end to start
-        return null;
-    }
+   //Q9. Reverse an Array- Begginer approach
+   public static void reverse(int arr[]){
+        int arr2[]= new int[arr.length];
+        int j=0;
+        for(int i=arr.length-1; i>=0; i--){
+            arr2[j]=arr[i];
+            j++;
 
-    // Q9: Optimized - reverse in-place using two pointers
-    public static void reverseInPlace(int[] arr) {
-        // TODO: use i = 0, j = n-1, swap while i < j
-    }
-
-    // Q10: Reverse subarray from l to r (0-based indices)
-    public static void reverseSubarray(int[] arr, int l, int r) {
-        // TODO: in-place reversal between l and r using two pointers
-    }
-
-    public static void printArray(int[] arr) {
-        for (int x : arr) {
-            System.out.print(x + " ");
-        }
-        System.out.println();
-    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter n:");
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        System.out.println("Enter " + n + " integers:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
         }
 
-        int[] reversed = reverseWithExtraArray(arr.clone());
-        System.out.println("Reversed with extra array:");
-        printArray(reversed);
+        for(int i =0; i<arr.length; i++){
+            System.out.print(arr2[i]+" ");
+        }
+   }
 
-        reverseInPlace(arr);
-        System.out.println("Reversed in-place:");
-        printArray(arr);
-
-        System.out.println("Enter l and r for subarray reversal:");
-        int l = sc.nextInt();
-        int r = sc.nextInt();
-        reverseSubarray(arr, l, r);
-        System.out.println("After subarray reversal:");
-        printArray(arr);
-
-        sc.close();
+   //Q10. Reverse a subarray [l, r]- Two Pointer approach
+   public static void SubarrayReverse(int arr[], int l, int r){
+    for(int i=l; i<r; i++){
+        int temp= arr[i];
+        arr[i]= arr[r];
+        arr[r]= temp;
+        r--;
     }
+    for(int i=0; i<arr.length; i++){
+        System.out.print(arr[i]+" ");
+    }
+   }
+
+   public static void main(String[] args){
+        int arr[]= {0,1,2,4,5,6,7,8,9};
+        int l=2;
+        int r=6;
+        reverse(arr);
+        SubarrayReverse(arr, l, r);
+   }
 }
 
 
