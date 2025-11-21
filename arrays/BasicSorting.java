@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 /**
  * Topic 5: Sorting & Order
@@ -15,66 +14,31 @@ import java.util.Scanner;
  */
 public class BasicSorting {
 
-    // Q14: Bubble Sort (basic)
-    public static void bubbleSort(int[] arr) {
-        // TODO: implement standard bubble sort
-    }
-
-    // Q14: Bubble Sort (optimized with early break)
-    public static void bubbleSortOptimized(int[] arr) {
-        // TODO: stop outer loop early if no swaps in a pass
-    }
-
-    // Q15: Selection Sort
-    public static void selectionSort(int[] arr) {
-        // TODO: implement selection sort
-    }
-
-    // Q16: Insertion Sort
-    public static void insertionSort(int[] arr) {
-        // TODO: implement insertion sort
-    }
-
-    public static void printArray(int[] arr) {
-        for (int x : arr) {
-            System.out.print(x + " ");
+    //Q14. Bubble Sort
+    public static void BubbleSort(int arr[]){
+        int n=arr.length;
+        for(int i=0;i<n-1;i++){
+            for(int j=0;j<n-1-i;j++)
+            {
+                if(arr[j]>arr[j+1])
+                {
+                    int temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
         }
-        System.out.println();
+        for(int i=0; i<arr.length; i++){
+            System.out.println(arr[i]);
+
+        }
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        int arr[] = {64, 34, 25, 12, 22, 11, 90};
+        BubbleSort(arr);
+    }}
+   
 
-        System.out.println("Enter n:");
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        System.out.println("Enter " + n + " integers:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
-
-        int[] a1 = arr.clone();
-        int[] a2 = arr.clone();
-        int[] a3 = arr.clone();
-
-        bubbleSort(a1);
-        System.out.println("Bubble sort:");
-        printArray(a1);
-
-        bubbleSortOptimized(a2);
-        System.out.println("Bubble sort optimized:");
-        printArray(a2);
-
-        selectionSort(a3);
-        System.out.println("Selection sort:");
-        printArray(a3);
-
-        insertionSort(arr);
-        System.out.println("Insertion sort:");
-        printArray(arr);
-
-        sc.close();
-    }
-}
 
 
