@@ -48,7 +48,7 @@ public class RotateArray {
     //Q12. Rotate an element by k steps
     public static void RotateArrayByKSteps(int arr[], int target)
     {
-        int k= target % arr.length;
+        int k= target % arr.length;   //This is a formula i.e one of the patterns of DSA
         while(k>0)
 
         {
