@@ -32,20 +32,19 @@ public class SubarraysBasics {
    public static void maxSubArraySum(int arr[]){
     int n=arr.length;
     int maxSum=Integer.MIN_VALUE;
-    for(int i=0;i<n;i++){
-     
+    for(int i=0;i<n;i++)
+    {
+        int currentSum=0;
         for(int j=i;j<n;j++){
-            int currentSum=0;
-            for(int k=i;k<=j;k++)
-            {
-                currentSum+=arr[k];
-            }
-            if(currentSum>maxSum)
-            {
+            currentSum+=arr[j];
+            if(currentSum>maxSum){
                 maxSum=currentSum;
             }
-        }}
-        System.out.println("Maximum Subarray Sum: "+maxSum);
+
+        }
+
+    }
+    System.out.println("Maximum Subarray Sum: "+maxSum);
     }
 
     public static void subArrayWithGivenSum(int arr[], int targetSum){
