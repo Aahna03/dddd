@@ -88,7 +88,7 @@ SecondLargest.java → Q17
 
 `DuplicateHandling.java` → Q18–Q20
 
-### 7A. Subarray (Continuous)
+### 7. Subarray (Continuous)
 
 | #   | Question                | Beginner Approach | Optimized / Pattern  |
 | --- | ----------------------- | ----------------- | -------------------- |
@@ -103,32 +103,15 @@ SecondLargest.java → Q17
 
 `MaximumSubarray.java` → Q22
 
-### 7B. Subsequence (Not continuous)
-
-| #   | Question                                    | Beginner Approach          | Optimized / Pattern         |
-| --- | ------------------------------------------- | -------------------------- | --------------------------- |
-| 24  | Generate All Subsequences                   | Recursion (pick/not pick) | -                           |
-| 25  | Check if A is Subsequence of B              | Brute / Two Pointers      | Two Pointers                |
-| 26  | Longest Increasing Subsequence (LIS)        | Brute (2ⁿ)                | DP / Binary Search          |
-| 27  | Count Subsequences Matching a Pattern       | Recursion                 | DP                          |
-| 28  | Maximum Sum Increasing Subsequence (MSIS)   | Brute                     | DP                          |
-
-**Implementation suggestions**
-
-`SubsequenceBasics.java` → Q24–Q25
-
-`LISProblems.java` → Q26–Q28
-
-### 8. Two Pointers Technique
-
 | #   | Question                        | Beginner Approach | Optimized / Pattern      |
 | --- | ------------------------------- | ----------------- | ------------------------ |
-| 29  | Palindrome Check (Optimized Q5) | -                 | Two Pointers             |
-| 30  | Reverse Array (Optimized Q9)    | -                 | Two Pointers             |
-| 31  | Pair with Given Sum (2-sum)     | Brute Force       | Two Pointers / HashMap   |
-| 32  | Triplet with Given Sum (3-sum)  | Brute Force       | Sorting + Two Pointers   |
-| 33  | Move Zeroes to End              | Brute Force       | Two Pointers             |
-| 34  | Segregate Positive & Negative   | Brute Force       | Two Pointers Partition   |
+| 24  | Palindrome Check (Optimized Q5) | -                 | Two Pointers             |
+| 25  | Reverse Array (Optimized Q9)    | -                 | Two Pointers             |
+| 26  | Pair with Given Sum (2-sum)     | Brute Force       | Two Pointers / HashMap   |
+| 27  | Triplet with Given Sum (3-sum)  | Brute Force       | Sorting + Two Pointers   |
+| 28  | Move Zeroes to End              | Brute Force       | Two Pointers             |
+| 29  | Segregate Positive & Negative   | Brute Force       | Two Pointers Partition   |
+
 
 
 **Implementation suggestions**
@@ -137,51 +120,47 @@ SecondLargest.java → Q17
 
 `ThreeSumAndRearrange.java` → Q32–Q34
 
-### 9. Prefix Sum & Hashing
-
 | #   | Question                              | Beginner Approach | Optimized / Pattern     |
 | --- | ------------------------------------- | ----------------- | ------------------------ |
-| 35  | Subarray Sum = K                      | Brute Force       | Prefix Sum / HashMap    |
-| 36  | Longest Subarray with Equal 0s and 1s | -                 | Prefix Sum + HashMap    |
-| 37  | Subarray with 0 Sum                   | -                 | Prefix Sum + HashMap    |
+| 30  | Subarray Sum = K                      | Brute Force       | Prefix Sum / HashMap    |
+| 31  | Longest Subarray with Equal 0s and 1s | -                 | Prefix Sum + HashMap    |
+| 32  | Subarray with 0 Sum                   | -                 | Prefix Sum + HashMap    |
+
 
 **Implementation suggestions**
 
 `PrefixSumHashing.java` → Q35–Q37
 
-### 10. Sliding Window
-
 | #   | Question                                  | Beginner Approach | Optimized / Pattern           |
 | --- | ----------------------------------------- | ----------------- | ----------------------------- |
-| 38  | Maximum Sum Subarray of Size k            | Brute Force       | Sliding Window                |
-| 39  | Smallest Subarray with Sum ≥ K            | Brute Force       | Sliding Window / Two Pointers |
-| 40  | Longest Subarray with K Distinct Elements | -                 | Sliding Window + HashMap      |
+| 33  | Maximum Sum Subarray of Size k            | Brute Force       | Sliding Window                |
+| 34  | Smallest Subarray with Sum ≥ K            | Brute Force       | Sliding Window / Two Pointers |
+| 35  | Longest Subarray with K Distinct Elements | -                 | Sliding Window + HashMap      |
 
 
 **Implementation suggestions**
 
 `SlidingWindowProblems.java` → Q38–Q40
 
-### 11. Binary Search on Answer
-
 | #   | Question                                | Beginner Approach | Optimized / Pattern      |
 | --- | --------------------------------------- | ----------------- | ------------------------ |
-| 41  | Minimum Element in Rotated Sorted Array | -                 | Binary Search on Answer |
-| 42  | Search in Rotated Sorted Array          | -                 | Binary Search on Answer |
-| 43  | Median of Two Sorted Arrays             | -                 | Binary Search on Answer |
-| 44  | Allocate Minimum Pages                  | -                 | Binary Search on Answer |
+| 36  | Minimum Element in Rotated Sorted Array | -                 | Binary Search on Answer |
+| 37  | Search in Rotated Sorted Array          | -                 | Binary Search on Answer |
+| 38  | Median of Two Sorted Arrays             | -                 | Binary Search on Answer |
+| 39  | Allocate Minimum Pages                  | -                 | Binary Search on Answer |
+
 
 **Implementation suggestions**
 
 `BinarySearchOnAnswer.java` → Q41–Q44
 
-### 12. Matrix (2D Arrays)
-
 | #   | Question                     | Beginner Approach | Optimized / Pattern               |
 | --- | ---------------------------- | ----------------- | --------------------------------- |
-| 45  | Spiral Traversal             | Brute Force       | -                                 |
-| 46  | Rotate Matrix by 90°         | Brute Force       | Transpose + Reverse Rows          |
-| 47  | Search in a Sorted 2D Matrix | Brute Force       | Staircase Method                  |
+| 40  | Spiral Traversal             | Brute Force       | -                                 |
+| 41  | Rotate Matrix by 90°         | Brute Force       | Transpose + Reverse Rows          |
+| 42  | Search in a Sorted 2D Matrix | Brute Force       | Staircase Method                  |
+
+
 
 
 **Implementation suggestions**
