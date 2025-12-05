@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 /**
  * Topic 7: Subarray & Subsequence
@@ -15,45 +14,65 @@ import java.util.Scanner;
  */
 public class SubarraysBasics {
 
-    // Q21: Print all subarrays of arr
-    public static void printAllSubarrays(int[] arr) {
-        // TODO: use two loops for start and end, and print each subarray
-    }
-
-    // Q22: Maximum subarray sum (brute force)
-    public static int maxSubArrayBruteForce(int[] arr) {
-        // TODO: O(n^2) or O(n^3) approach to find max subarray sum
-        return 0;
-    }
-
-    // Q23: Subarray with given sum (brute force)
-    public static boolean hasSubarrayWithSumBruteForce(int[] arr, int target) {
-        // TODO: check every subarray sum
-        return false;
-    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter n:");
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        System.out.println("Enter " + n + " integers:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+   public static void printAllSubArrays(int arr[]){
+   int n=arr.length;
+   for(int i=0;i<n;i++)
+   {
+    for(int j=i;j<n;j++)
+    {
+        for(int k=i;k<=j;k++)
+        {
+            System.out.print(arr[k]+" ");
         }
-
-        System.out.println("All subarrays:");
-        printAllSubarrays(arr);
-
-        System.out.println("Max subarray sum (brute force) = " + maxSubArrayBruteForce(arr));
-
-        System.out.println("Enter target sum:");
-        int target = sc.nextInt();
-        System.out.println("Has subarray with sum (brute force)? " + hasSubarrayWithSumBruteForce(arr, target));
-
-        sc.close();
+        System.out.println();
     }
+   }
+   }
+
+   public static void maxSubArraySum(int arr[]){
+    int n=arr.length;
+    int maxSum=Integer.MIN_VALUE;
+    for(int i=0;i<n;i++){
+     
+        for(int j=i;j<n;j++){
+            int currentSum=0;
+            for(int k=i;k<=j;k++)
+            {
+                currentSum+=arr[k];
+            }
+            if(currentSum>maxSum)
+            {
+                maxSum=currentSum;
+            }
+        }}
+        System.out.println("Maximum Subarray Sum: "+maxSum);
+    }
+
+    public static void subArrayWithGivenSum(int arr[], int targetSum){
+        int n=arr.length;
+        for(int i=0;i<n;i++){
+            int currentSum=0;
+            for(int j=i;j<n;j++){
+                currentSum+=arr[j];
+                if(currentSum==targetSum)
+                {
+                    for(int k=i;k<=j;k++)
+                    {
+                        System.out.print(arr[k]+" ");
+                    }
+                    System.out.println();   
+                    return;
+                }
+            }
+        }
+    }
+
+   public static void main(String[] args){
+    int arr[]={1,2,3};
+    printAllSubArrays(arr);
+    maxSubArraySum(arr);
+    subArrayWithGivenSum(arr, 5);
+   }
 }
 
 
