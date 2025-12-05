@@ -118,9 +118,9 @@ SecondLargest.java → Q17
 
 **Implementation suggestions**
 
-`TwoSum.java` → Q31
+`TwoSum.java` → Q26
 
-`ThreeSumAndRearrange.java` → Q32–Q34
+`ThreeSumAndRearrange.java` → Q27-29
 
 ### 9. Prefix Sum and Hashing
 
@@ -133,7 +133,7 @@ SecondLargest.java → Q17
 
 **Implementation suggestions**
 
-`PrefixSumHashing.java` → Q35–Q37
+`PrefixSumHashing.java` → Q30–Q32
 
 ### 10. Sliding window
 
@@ -146,7 +146,7 @@ SecondLargest.java → Q17
 
 **Implementation suggestions**
 
-`SlidingWindowProblems.java` → Q38–Q40
+`SlidingWindowProblems.java` → Q33-35
 
 ### 11. Binary Search on answer
 
@@ -160,7 +160,7 @@ SecondLargest.java → Q17
 
 **Implementation suggestions**
 
-`BinarySearchOnAnswer.java` → Q41–Q44
+`BinarySearchOnAnswer.java` → Q36-39
 
 | #   | Question                     | Beginner Approach | Optimized / Pattern               |
 | --- | ---------------------------- | ----------------- | --------------------------------- |
@@ -173,7 +173,7 @@ SecondLargest.java → Q17
 
 **Implementation suggestions**
 
-`MatrixProblems.java` → Q45–Q47
+`MatrixProblems.java` → Q40-42
 
 ### How to Study
 
