@@ -27,14 +27,25 @@ Each section lists the question, beginner intuition, and the optimized / pattern
 **Implementation**: `IntermediateRecursion.java`
 
 ---
+### Subsequence Problems
+
+| #   | Question                                    | Beginner Approach                 | Optimized / Pattern Insight         |
+|-----|----------------------------------------------|-----------------------------------|--------------------------------------|
+| 6   | Generate all subsequences                    | Pick / Not-pick recursion         | -                                    |
+| 7   | Check if A is a subsequence of B            | Two pointers / simple iteration   | -                                    |
+| 8   | Count subsequences matching a pattern       | Recursive include/exclude         | Dynamic Programming (LCS-style)      |
+| 9   | Longest Increasing Subsequence (LIS)        | Brute force recursion (2ⁿ)        | DP (O(n²)) / Binary Search (O(n log n)) |
+| 10  | Maximum Sum Increasing Subsequence (MSIS)   | Try all increasing subsequences   | DP tabulation                        |
+
+**Implementation**: `Subsequence.java`
 
 ### Backtracking
 
-| # | Question                | Beginner Approach                        | Optimized / Pattern Insight          |
-|---|-------------------------|------------------------------------------|--------------------------------------|
-| 6 | Generate all subsets    | Brute-force include/exclude recursion    | Backtracking with pruning / order    |
-| 7 | Generate all permutations| Swap characters recursively              | Backtracking with boolean used array |
-| 8 | Rat in a Maze           | Try all directions without pruning       | Backtracking + visited matrix        |
+| #   | Question                  | Beginner Approach                           | Optimized / Pattern Insight           |
+|-----|---------------------------|----------------------------------------------|---------------------------------------|
+| 11  | Generate all subsets      | Include/Exclude recursion (brute force)      | Backtracking with pruning / ordering  |
+| 12  | Generate all permutations | Swap characters recursively                  | Backtracking with boolean used[]      |
+| 13  | Rat in a Maze             | Try all directions without pruning           | Backtracking + visited matrix         |
 
 **Implementation**: `BacktrackingProblems.java`
 
@@ -42,10 +53,10 @@ Each section lists the question, beginner intuition, and the optimized / pattern
 
 ### Advanced Recursion
 
-| # | Question                 | Beginner Approach                     | Optimized / Pattern Insight               |
-|---|--------------------------|---------------------------------------|-------------------------------------------|
-| 9 | N-Queens Problem         | Place queens row by row without checks| Backtracking + safety checks/pruning      |
-|10 | Palindrome partitioning  | Try all partitions recursively        | Backtracking + DP for palindrome checking |
+| #   | Question                   | Beginner Approach                        | Optimized / Pattern Insight              |
+|-----|----------------------------|-------------------------------------------|------------------------------------------|
+| 14  | N-Queens Problem           | Try placing queens without safety checks | Backtracking + pruning + safe checks     |
+| 15  | Palindrome Partitioning    | Generate all partitions recursively       | Backtracking + DP for palindrome checking|
 
 **Implementation**: `AdvancedRecursionProblems.java`
 
