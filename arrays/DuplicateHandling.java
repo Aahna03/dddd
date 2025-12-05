@@ -17,59 +17,73 @@ import java.util.*;
  */
 public class DuplicateHandling {
 
-    // Q18: Remove duplicates (beginner, O(n^2))
-    public static int[] removeDuplicatesBruteForce(int[] arr) {
-        // TODO: build new array without duplicates using nested loops
-        return null;
+    public static void removeDuplicates(int arr[]){
+        int n= arr.length;
+        for(int i=0;i<n;i++){
+            boolean isDuplicate=false;
+            for(int j=i+1;j<n;j++)
+            {
+                if(arr[i]==arr[j])
+                {
+                    isDuplicate=true;
+                    break;
+                }
+
+            }
+            if(!isDuplicate)
+            {
+                System.out.print(arr[i]+" ");
+            }
+        }
     }
 
-    // Q18: Remove duplicates (HashSet)
-    public static int[] removeDuplicatesHashSet(int[] arr) {
-        // TODO: use HashSet to keep unique elements
-        return null;
-    }
+    public static void findAllDuplicate(int arr[]){
+        int n=arr.length;
+        int arr1[]=new int[n];
+        int k=0;
+        for(int i=0; i<n;i++){
+            boolean isDuplicate=false;
+            for(int j=i+1;j<n;j++)
+            {
+                if(arr[i]==arr[j])
+                {
+                    isDuplicate=true;
+                    break;
+                }
+            }
+           if(!isDuplicate)
+           {
+            continue;
+           }
 
-    // Q18: Remove duplicates (two pointers for sorted array)
-    public static int removeDuplicatesTwoPointers(int[] arr) {
-        // TODO: in-place remove duplicates in sorted array, return new length
-        return 0;
-    }
+           boolean isAlreadyPresent=false;
 
-    // Q19: Find all duplicates (brute force)
-    public static List<Integer> findDuplicatesBruteForce(int[] arr) {
-        // TODO: nested loops to detect duplicates
-        return new ArrayList<>();
-    }
-
-    // Q19: Find all duplicates (HashMap frequency)
-    public static List<Integer> findDuplicatesHashMap(int[] arr) {
-        // TODO: count frequency in a HashMap, return keys with freq > 1
-        return new ArrayList<>();
-    }
-
-    // Q20: Frequency of each element (brute force)
-    public static void printFrequencyBruteForce(int[] arr) {
-        // TODO: for each element, count how many times it appears (avoid recounting)
-    }
-
-    // Q20: Frequency using HashMap
-    public static Map<Integer, Integer> frequencyHashMap(int[] arr) {
-        // TODO: return map of value -> count
-        return new HashMap<>();
-    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter n:");
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        System.out.println("Enter " + n + " integers:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+           for(int x=0;x<k;x++)
+           {
+            if(arr1[x]==arr[i])
+            {
+                isAlreadyPresent=true;
+                break;
+            }
+           }
+           if(!isAlreadyPresent)
+           {
+            arr1[k]=arr[i];
+            k++;
+           }
         }
 
-        sc.close();
+        for(int i=0; i<k;i++){
+            System.out.print(arr1[i]+" ");
+        }
+    }
+
+    
+
+    public static void main(String[] args){
+        int arr[]={1,2,2,2,3,3,3,4,4,4,5,5,5,6};
+        removeDuplicates(arr);
+        findAllDuplicate(arr);
     }
 }
 

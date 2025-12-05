@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 /**
  * Problem: Rotate Array
@@ -11,42 +10,74 @@ import java.util.Scanner;
  * 2. In-place reversal solution (O(n) time, O(1) extra space)
  */
 public class RotateArray {
-
-    // TODO: Implement rotation using an extra array
-    public static void rotateExtraArray(int[] nums, int k) {
-        // your code here
-    }
-
-    // TODO: Implement in-place rotation using reversals
-    public static void rotateInPlace(int[] nums, int k) {
-        // your code here
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Enter array length:");
-        int n = scanner.nextInt();
-        int[] nums = new int[n];
-
-        System.out.println("Enter " + n + " integers:");
-        for (int i = 0; i < n; i++) {
-            nums[i] = scanner.nextInt();
+  
+    //Q11. Rotate array by one step (Left rotation)
+    public static void RotateByone(int arr[]) {
+        int first = arr[0];
+        for(int i=0; i<arr.length-1; i++)
+        {
+            arr[i]=arr[i+1];
         }
 
-        System.out.println("Enter k (steps to rotate right):");
-        int k = scanner.nextInt();
+        arr[arr.length-1]= first;
+        
+        for(int i=0; i<arr.length; i++){
+        System.out.println(arr[i]);
 
-        rotateInPlace(nums, k);
-
-        System.out.print("Rotated array: ");
-        for (int num : nums) {
-            System.out.print(num + " ");
         }
-        System.out.println();
-
-        scanner.close();
     }
+
+
+    //Q11. Rotate array by one step (Right rotation)
+    public static void RotateByOneRight(int arr[]){
+        int last = arr[arr.length-1];
+       
+        for(int i=arr.length-1;i>=1;i--)
+        {
+            arr[i]=arr[i-1];
+        }
+
+        arr[0]=last;
+         for(int i=0; i<arr.length; i++){
+        System.out.println(arr[i]);
+
+        }
+
+    }
+
+    //Q12. Rotate an element by k steps
+    public static void RotateArrayByKSteps(int arr[], int target)
+    {
+        int k= target % arr.length;   //This is a formula i.e one of the patterns of DSA
+        while(k>0)
+
+        {
+           int first = arr[0];
+        for(int i=0; i<arr.length-1; i++)
+        {
+            arr[i]=arr[i+1];
+        }
+
+        arr[arr.length-1]= first;
+        
+            k--;
+        }
+
+        for(int i=0; i<arr.length; i++){
+            System.out.println(arr[i]);
+
+        }
+      
+    }
+
+    public static void main(String[] args){
+        int arr[]= {1,2,3,4,5,6,7};
+        int target= 5;
+        RotateByone(arr);
+        RotateByOneRight(arr);
+        RotateArrayByKSteps(arr, target);
+    }
+
 }
 
 
