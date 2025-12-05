@@ -19,9 +19,45 @@ import java.util.Scanner;
  */
 public class ArrayBasics {
 
-    
+    //Q24: Reverse and array using two pointers
+    public static void reverseArray(int arr[]){
+        int start=0;
+        int end=arr.length-1;
+        while(start<end){
+            int temp=arr[start];
+            arr[start]=arr[end];
+            arr[end]=temp;
+            start++;
+            end--;
+        }
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
 
 
+    //Q25: Palindrome array using two pointers
+    public static void palindromeArray(int arr[]){
+        int start = 0;
+        int end = arr.length-1;
+        while(start<end){
+            if(arr[start]!=arr[end]){
+                System.out.println("The array is not a palindrome");
+                return;
+            }
+            start++;
+            end--;
+        }
+        System.out.println("The array is a palindrome");
+    }
+
+
+
+    public static void main(String[] args){
+        int arr[]={1,2,3,2,1};
+        reverseArray(arr);
+        palindromeArray(arr);
+    }
 
 
 }

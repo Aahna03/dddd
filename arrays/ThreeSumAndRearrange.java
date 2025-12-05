@@ -17,49 +17,48 @@ import java.util.*;
  */
 public class ThreeSumAndRearrange {
 
-    // Q27: 3-sum brute force - check all triplets
-    public static boolean threeSumBruteForce(int[] arr, int target) {
-        // TODO: triple nested loops to see if any (i, j, k) sum to target
-        return false;
-    }
-
-    // Q27: 3-sum optimized - sort and use two pointers
-    public static boolean threeSumTwoPointers(int[] arr, int target) {
-        // TODO: sort array, fix one index, then use two pointers for the remaining two
-        return false;
-    }
-
-    // Q28: Move zeroes to end (brute force using extra array)
-    public static void moveZeroesBruteForce(int[] arr) {
-        // TODO: create new array, first fill non-zero, then zeroes, copy back
-    }
-
-    // Q28: Move zeroes to end (two pointers)
-    public static void moveZeroesTwoPointers(int[] arr) {
-        // TODO: maintain index of next non-zero position
-    }
-
-    // Q29: Segregate positive & negative (brute force using extra array)
-    public static int[] segregatePosNegExtra(int[] arr) {
-        // TODO: build new array with negatives first, then positives
-        return null;
-    }
-
-    // Q29: Segregate positive & negative in-place (two-pointer partition)
-    public static void segregatePosNegInPlace(int[] arr) {
-        // TODO: partition array so that all negatives are on left, positives on right
-    }
-
-    public static void printArray(int[] arr) {
-        for (int x : arr) {
-            System.out.print(x + " ");
+  //three sum using brute force 
+  public static void ThreeSumUsingBruteForce(int arr[], int target)
+  {
+    int n=arr.length;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=i+1;j<n;j++){
+            for(int k=j+1;k<n;k++){
+                if(target==arr[i]+arr[j]+arr[k]){
+                    System.out.println(arr[i]+","+arr[j]+","+arr[k]);
+                    break;
+                }
+            }
         }
-        System.out.println();
     }
+  }
 
-    public static void main(String[] args) {
-        // Use this main to test each function manually if you like.
+  public static void ThreeSumUsingTwoPointers(int arr[], int target){
+    int n=arr.length;
+    for(int i=0;i<n;i++){
+        int start = i+1;
+        int end = n-1;
+        while(start<end){
+            int sum = arr[i]+arr[start]+arr[end];
+            if(sum==target){
+                System.out.println(arr[i]+","+arr[start]+","+arr[end]);
+                break;
+            }
+            else if(sum<target){
+                start++;
+            }
+            else end--;
+        }
     }
+  }
+
+  public static void main(String args[]){
+    int arr[]={1,2,5,6,7,8};
+    int target= 21;
+    ThreeSumUsingBruteForce(arr, target);
+    ThreeSumUsingTwoPointers(arr, target);
+  }
 }
 
 

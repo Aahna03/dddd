@@ -14,38 +14,48 @@ import java.util.Scanner;
  */
 public class TwoSum {
 
-    // TODO: Implement the brute force solution here
-    public static int[] twoSumBruteForce(int[] nums, int target) {
-        // your code here
-        return new int[] { -1, -1 };
-    }
-
-    // TODO: Implement the optimized solution here
-    public static int[] twoSumOptimized(int[] nums, int target) {
-        // your code here
-        return new int[] { -1, -1 };
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Enter array length:");
-        int n = scanner.nextInt();
-        int[] nums = new int[n];
-
-        System.out.println("Enter " + n + " integers:");
-        for (int i = 0; i < n; i++) {
-            nums[i] = scanner.nextInt();
+  //Doing using brute force
+  public static void TwoSumUsingBruteForce(int arr[], int target){
+    int n=arr.length;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=i+1;j<n;j++)
+        {
+           if(arr[i]+arr[j]==target)
+           {
+            System.out.println(arr[i]+","+arr[j]);
+            return;
+           }
         }
-
-        System.out.println("Enter target:");
-        int target = scanner.nextInt();
-
-        int[] result = twoSumOptimized(nums, target);
-        System.out.println("Result indices: [" + result[0] + ", " + result[1] + "]");
-
-        scanner.close();
     }
+  }
+
+  //Doing two sum using two pointers
+  //notes: array needs to be sorted
+  public static void TwoSumUsingTwoPointers(int arr[], int target){
+     int start=0;
+     int end=arr.length-1;
+     while(start<end)
+     {
+        int sum = arr[start]+arr[end];
+        if(sum==target){
+            System.out.println(arr[start]+","+arr[end]);
+            break;
+        }
+        else if(sum<target){
+            start++;
+        }
+        else end--;
+     }
+     
+  }
+
+  public static void main(String args[]){
+    int arr[]= {2,6,7,11};
+    int target= 9;
+    TwoSumUsingBruteForce(arr, target);
+    TwoSumUsingTwoPointers(arr, target);
+  }
 }
 
 
