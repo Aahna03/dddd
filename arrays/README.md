@@ -103,6 +103,8 @@ SecondLargest.java → Q17
 
 `MaximumSubarray.java` → Q22
 
+### 8. Two Pointers
+
 | #   | Question                        | Beginner Approach | Optimized / Pattern      |
 | --- | ------------------------------- | ----------------- | ------------------------ |
 | 24  | Palindrome Check (Optimized Q5) | -                 | Two Pointers             |
@@ -120,6 +122,8 @@ SecondLargest.java → Q17
 
 `ThreeSumAndRearrange.java` → Q32–Q34
 
+### 9. Prefix Sum and Hashing
+
 | #   | Question                              | Beginner Approach | Optimized / Pattern     |
 | --- | ------------------------------------- | ----------------- | ------------------------ |
 | 30  | Subarray Sum = K                      | Brute Force       | Prefix Sum / HashMap    |
@@ -131,6 +135,8 @@ SecondLargest.java → Q17
 
 `PrefixSumHashing.java` → Q35–Q37
 
+### 10. Sliding window
+
 | #   | Question                                  | Beginner Approach | Optimized / Pattern           |
 | --- | ----------------------------------------- | ----------------- | ----------------------------- |
 | 33  | Maximum Sum Subarray of Size k            | Brute Force       | Sliding Window                |
@@ -141,6 +147,8 @@ SecondLargest.java → Q17
 **Implementation suggestions**
 
 `SlidingWindowProblems.java` → Q38–Q40
+
+### 11. Binary Search on answer
 
 | #   | Question                                | Beginner Approach | Optimized / Pattern      |
 | --- | --------------------------------------- | ----------------- | ------------------------ |
@@ -161,7 +169,7 @@ SecondLargest.java → Q17
 | 42  | Search in a Sorted 2D Matrix | Brute Force       | Staircase Method                  |
 
 
-
+### 12. Matrix Problems
 
 **Implementation suggestions**
 
